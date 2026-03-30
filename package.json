@@ -1,0 +1,54 @@
+{
+  "name": "@liquidityio/logo",
+  "version": "1.0.0",
+  "description": "Official Liquidity logo package with React components and utilities",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.js"
+    }
+  },
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "compile": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "generate": "node dist/generator.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["liquidity", "logo", "icon", "favicon", "react", "typescript"],
+  "author": "Liquidity Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liquidityio/logo.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
