@@ -1,4 +1,5 @@
-node_modules/
-dist/
+.DS_Store
 *.tsbuildinfo
 CLAUDE.md
+dist/
+node_modules/

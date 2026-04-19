@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 24" class="liq-logo">
+  <style>
+    .wm {
+      transform: translateX(0);
+      opacity: 1;
+      animation: slideOut 0.4s ease 2.5s forwards;
+    }
+    svg:hover .wm {
+      transform: translateX(0) !important;
+      opacity: 1 !important;
+      animation: none;
+      transition: transform 0.3s ease, opacity 0.2s ease;
+    }
+    @keyframes slideOut {
+      to { transform: translateX(-130px); opacity: 0; }
+    }
+  </style>
+
+  <!-- L block icon -->
+  <rect x="0" y="1" width="4.2" height="4.2" rx="0.4" fill="#299BEF"/>
+  <rect x="0" y="6.2" width="4.2" height="4.2" rx="0.4" fill="#0E7DE0"/>
+  <rect x="0" y="11.4" width="4.2" height="4.2" rx="0.4" fill="#0051CC"/>
+  <rect x="5.2" y="11.4" width="4.2" height="4.2" rx="0.4" fill="#0E7DE0"/>
+  <rect x="0" y="16.6" width="4.2" height="4.2" rx="0.4" fill="#0045AA"/>
+  <rect x="5.2" y="16.6" width="4.2" height="4.2" rx="0.4" fill="#0051CC"/>
+  <rect x="10.4" y="16.6" width="4.2" height="4.2" rx="0.4" fill="#0E7DE0"/>
+
+  <!-- Wordmark: "iquidity.io" with clip to hide overflow -->
+  <clipPath id="c"><rect x="16" y="0" width="164" height="24"/></clipPath>
+  <text class="wm" clip-path="url(#c)" x="18" y="19"
+    font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="15.5" font-weight="500" fill="white">iquidity.io</text>
+</svg>
